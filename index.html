@@ -2,22 +2,13 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="container">
+  <div class="header">
+    ODDKID
+  </div>
+  <div class="content">
+    <p>Oddkid is a strategy studio that helps leaders and their teams try things, make things, and change things.</p>
+    <p>We do this by building a deep understanding of your business; working collaboratively with C-level stakeholders and core teams; and providing strategic leadership that aligns with your mission and champions creativity.</p>
+    <p><a href="mailto:studio@oddkid.com">studio@oddkid.com</a></p>
+  </div>
 </div>
